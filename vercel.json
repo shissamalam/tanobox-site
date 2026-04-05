@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/businessplan", "destination": "/businessplan/index.html" },
+    { "source": "/businessplan/", "destination": "/businessplan/index.html" }
+  ]
+}
