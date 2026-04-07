@@ -1,5 +1,7 @@
 {
   "rewrites": [
+    { "source": "/financialmodel", "destination": "/financialmodel/index.html" },
+    { "source": "/financialmodel/", "destination": "/financialmodel/index.html" },
     { "source": "/businessplan", "destination": "/businessplan/index.html" },
     { "source": "/businessplan/", "destination": "/businessplan/index.html" }
   ]
