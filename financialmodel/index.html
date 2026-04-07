@@ -19,68 +19,68 @@
     --yellow: #fbbf24; --yellow-bg: rgba(251,191,36,0.1);
   }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--ink); font-family: system-ui, sans-serif; font-size: 14px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  body { background: var(--bg); color: var(--ink); font-family: system-ui, sans-serif; font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
 
   /* ── NAV ── */
   .topbar { padding: 16px 32px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
   .topbar-logo { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--ink); text-decoration: none; }
   .topbar-right { display: flex; align-items: center; gap: 16px; }
-  .topbar-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--ink-dim); letter-spacing: 0.08em; text-transform: uppercase; }
-  .back-link { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--copper); text-decoration: none; border: 1px solid var(--copper-border); padding: 5px 12px; border-radius: 6px; background: var(--copper-bg); }
+  .topbar-label { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--ink-dim); letter-spacing: 0.08em; text-transform: uppercase; }
+  .back-link { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--copper); text-decoration: none; border: 1px solid var(--copper-border); padding: 5px 12px; border-radius: 6px; background: var(--copper-bg); }
 
   /* ── PAGE LAYOUT ── */
   .page { max-width: 1400px; margin: 0 auto; padding: 40px 32px 80px; }
   .page-header { margin-bottom: 40px; }
-  .page-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--copper); margin-bottom: 12px; }
+  .page-label { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--copper); margin-bottom: 12px; }
   .page-title { font-family: 'DM Serif Display', serif; font-size: clamp(28px, 4vw, 48px); font-weight: 400; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 12px; }
-  .page-sub { font-size: 14px; color: var(--ink-muted); max-width: 600px; line-height: 1.6; }
+  .page-sub { font-size: 16px; color: var(--ink-muted); max-width: 600px; line-height: 1.6; }
 
   /* ── ASSUMPTION CONTROLS ── */
   .controls { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 24px; margin-bottom: 32px; }
-  .controls-title { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-dim); margin-bottom: 16px; }
+  .controls-title { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-dim); margin-bottom: 16px; }
   .controls-row { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-end; }
   .control-group { display: flex; flex-direction: column; gap: 8px; }
-  .control-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--ink-dim); letter-spacing: 0.06em; }
+  .control-label { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--ink-dim); letter-spacing: 0.06em; }
   .tab-group { display: flex; gap: 4px; background: var(--surface-2); padding: 4px; border-radius: 8px; }
-  .tab-btn { font-family: 'IBM Plex Mono', monospace; font-size: 11px; padding: 6px 12px; border-radius: 6px; border: none; cursor: pointer; background: transparent; color: var(--ink-muted); transition: all 0.15s; white-space: nowrap; }
+  .tab-btn { font-family: 'IBM Plex Mono', monospace; font-size: 13px; padding: 6px 12px; border-radius: 6px; border: none; cursor: pointer; background: transparent; color: var(--ink-muted); transition: all 0.15s; white-space: nowrap; }
   .tab-btn.active { background: var(--copper); color: #000; font-weight: 500; }
   .tab-btn:hover:not(.active) { background: rgba(255,255,255,0.05); color: var(--ink); }
 
   /* ── KEY METRICS BAR ── */
   .metrics-bar { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 32px; }
   .metric-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; }
-  .metric-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); margin-bottom: 8px; }
-  .metric-value { font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 500; color: var(--ink); letter-spacing: -0.02em; line-height: 1; margin-bottom: 4px; }
+  .metric-label { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-dim); margin-bottom: 8px; }
+  .metric-value { font-family: 'IBM Plex Mono', monospace; font-size: 26px; font-weight: 500; color: var(--ink); letter-spacing: -0.02em; line-height: 1; margin-bottom: 4px; }
   .metric-value.green { color: var(--green); }
   .metric-value.copper { color: var(--copper); }
   .metric-value.blue { color: var(--blue); }
-  .metric-sub { font-size: 11px; color: var(--ink-dim); }
+  .metric-sub { font-size: 13px; color: var(--ink-dim); }
 
   /* ── SCENARIO COLUMNS ── */
   .scenario-header { display: grid; grid-template-columns: 200px 1fr 1fr 1fr; gap: 2px; margin-bottom: 2px; }
-  .scenario-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 14px; border-radius: 8px 8px 0 0; text-align: center; }
+  .scenario-label { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; padding: 10px 14px; border-radius: 8px 8px 0 0; text-align: center; }
   .scenario-label.solo { background: rgba(200,132,58,0.15); color: var(--copper); border: 1px solid var(--copper-border); border-bottom: none; }
   .scenario-label.portland { background: rgba(96,165,250,0.1); color: var(--blue); border: 1px solid rgba(96,165,250,0.2); border-bottom: none; }
   .scenario-label.honolulu { background: rgba(74,222,128,0.1); color: var(--green); border: 1px solid rgba(74,222,128,0.2); border-bottom: none; }
 
   /* ── STATEMENT TABLE ── */
   .statement-section { margin-bottom: 24px; }
-  .statement-title { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); padding: 10px 0 8px; border-bottom: 1px solid var(--border); margin-bottom: 2px; }
+  .statement-title { font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-muted); padding: 10px 0 8px; border-bottom: 1px solid var(--border); margin-bottom: 2px; }
   .fin-table { width: 100%; border-collapse: collapse; }
   .fin-table tr { border-bottom: 1px solid rgba(255,255,255,0.04); }
   .fin-table tr:hover { background: rgba(255,255,255,0.02); }
-  .fin-table td { padding: 7px 10px; font-size: 13px; vertical-align: middle; }
-  .fin-table .row-label { color: var(--ink-muted); font-size: 12px; width: 200px; padding-left: 0; }
-  .fin-table .row-label.indent { padding-left: 16px; color: var(--ink-dim); font-size: 11px; }
-  .fin-table .row-label.section { color: var(--ink); font-weight: 500; font-size: 12px; padding-top: 12px; }
+  .fin-table td { padding: 9px 12px; font-size: 15px; vertical-align: middle; }
+  .fin-table .row-label { color: var(--ink-muted); font-size: 14px; width: 200px; padding-left: 0; }
+  .fin-table .row-label.indent { padding-left: 16px; color: var(--ink-dim); font-size: 13px; }
+  .fin-table .row-label.section { color: var(--ink); font-weight: 500; font-size: 14px; padding-top: 12px; }
   .fin-table .row-label.total { color: var(--ink); font-weight: 500; }
-  .fin-table .num { font-family: 'IBM Plex Mono', monospace; font-size: 12px; text-align: right; color: var(--ink-muted); width: calc((100% - 200px) / 9); }
+  .fin-table .num { font-family: 'IBM Plex Mono', monospace; font-size: 13px; text-align: right; color: var(--ink-muted); width: calc((100% - 200px) / 9); }
   .fin-table .num.bold { color: var(--ink); font-weight: 500; }
   .fin-table .num.green { color: var(--green); }
   .fin-table .num.red { color: var(--red); }
   .fin-table .num.copper { color: var(--copper); }
   .fin-table .num.blue { color: var(--blue); }
-  .year-header td { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: var(--ink-dim); text-align: right; padding: 4px 10px; letter-spacing: 0.06em; border-bottom: 1px solid var(--border); }
+  .year-header td { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink-dim); text-align: right; padding: 4px 10px; letter-spacing: 0.06em; border-bottom: 1px solid var(--border); }
   .year-header td:first-child { text-align: left; padding-left: 0; }
   .subtotal-row td { border-top: 1px solid var(--border); padding-top: 8px; }
   .total-row td { border-top: 2px solid var(--border); font-weight: 500; }
@@ -94,19 +94,19 @@
   /* ── ASSUMPTION TABLE ── */
   .assumption-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
   .assumption-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
-  .assumption-card-title { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--copper); margin-bottom: 12px; }
-  .assumption-row { display: flex; justify-content: space-between; align-items: center; padding: 5px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 12px; }
+  .assumption-card-title { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--copper); margin-bottom: 12px; }
+  .assumption-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 14px; }
   .assumption-row:last-child { border-bottom: none; }
   .assumption-key { color: var(--ink-muted); }
-  .assumption-val { font-family: 'IBM Plex Mono', monospace; color: var(--ink); font-size: 11px; }
+  .assumption-val { font-family: 'IBM Plex Mono', monospace; color: var(--ink); font-size: 13px; }
 
   /* ── YEAR SELECTOR ── */
   .view-controls { display: flex; gap: 12px; align-items: center; margin-bottom: 24px; flex-wrap: wrap; }
-  .view-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--ink-dim); }
+  .view-label { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--ink-dim); }
 
   @media (max-width: 900px) {
     .scenario-header { grid-template-columns: 140px 1fr 1fr 1fr; }
-    .fin-table .row-label { width: 140px; font-size: 11px; }
+    .fin-table .row-label { width: 160px; font-size: 13px; }
     .assumption-grid { grid-template-columns: 1fr; }
     .page { padding: 24px 16px 60px; }
   }
@@ -503,7 +503,7 @@ function renderStatements() {
         <tr><td class="row-label indent">Stripe processing fees</td>${numCells(null, (d)=>-d.is.stripeFees, 'red')}</tr>
         <tr class="subtotal-row"><td class="row-label total">Total COGS</td>${numCells(null, (d)=>-d.is.totalCOGS, 'red')}</tr>
         <tr class="subtotal-row"><td class="row-label total">Gross Profit</td>${numCells(null, (d)=>d.is.grossProfit, v=>v>=0?'green bold':'red bold')}</tr>
-        <tr><td class="row-label indent" style="color:var(--ink-dim)">Gross Margin %</td>${scenarioCols.map(sc => years.map(y => `<td class="num" style="color:var(--ink-dim);font-size:11px">${fmtPct(data[sc][y].is.grossMargin)}</td>`).join('')).join('')}</tr>
+        <tr><td class="row-label indent" style="color:var(--ink-dim)">Gross Margin %</td>${scenarioCols.map(sc => years.map(y => `<td class="num" style="color:var(--ink-dim);font-size:13px">${fmtPct(data[sc][y].is.grossMargin)}</td>`).join('')).join('')}</tr>
         <tr class="spacer-row"><td colspan="${1 + scenarioCols.length * colSpan}"></td></tr>
         <tr><td class="row-label section">Operating Expenses</td><td></td></tr>
         <tr><td class="row-label indent">LinkedIn Sales Navigator</td>${numCells(null, (d)=>-d.is.linkedin, 'red')}</tr>
@@ -516,7 +516,7 @@ function renderStatements() {
         <tr class="subtotal-row"><td class="row-label total">Total OpEx</td>${numCells(null, (d)=>-d.is.totalOpEx, 'red')}</tr>
         <tr class="spacer-row"><td colspan="${1 + scenarioCols.length * colSpan}"></td></tr>
         <tr class="total-row"><td class="row-label total">Net Operating Income</td>${numCells(null, (d)=>d.is.netIncome, v=>v>=0?'green bold':'red bold')}</tr>
-        <tr><td class="row-label indent" style="color:var(--ink-dim)">Units sold (HW / SW)</td>${scenarioCols.map(sc => years.map(y => `<td class="num" style="color:var(--ink-dim);font-size:11px">${data[sc][y].is.units.hw} / ${data[sc][y].is.units.sw}</td>`).join('')).join('')}</tr>
+        <tr><td class="row-label indent" style="color:var(--ink-dim)">Units sold (HW / SW)</td>${scenarioCols.map(sc => years.map(y => `<td class="num" style="color:var(--ink-dim);font-size:13px">${data[sc][y].is.units.hw} / ${data[sc][y].is.units.sw}</td>`).join('')).join('')}</tr>
       </table>
     </div>
   `;
@@ -571,7 +571,7 @@ function renderStatements() {
         <tr class="subtotal-row"><td class="row-label total">Total Equity</td>${numCells(null, (d)=>d.bs.totalEquity, 'bold')}</tr>
         <tr class="spacer-row"><td colspan="${1 + scenarioCols.length * colSpan}"></td></tr>
         <tr class="total-row"><td class="row-label total">Total Liabilities + Equity</td>${numCells(null, (d)=>d.bs.totalLiabilitiesAndEquity, 'bold')}</tr>
-        <tr><td class="row-label indent" style="color:var(--ink-dim);font-size:11px">Balance check</td>${scenarioCols.map(sc => years.map(y => `<td class="num" style="color:${data[sc][y].bs.balanceCheck==='BALANCED'?'var(--green)':'var(--red)'};font-size:10px">${data[sc][y].bs.balanceCheck}</td>`).join('')).join('')}</tr>
+        <tr><td class="row-label indent" style="color:var(--ink-dim);font-size:13px">Balance check</td>${scenarioCols.map(sc => years.map(y => `<td class="num" style="color:${data[sc][y].bs.balanceCheck==='BALANCED'?'var(--green)':'var(--red)'};font-size:12px">${data[sc][y].bs.balanceCheck}</td>`).join('')).join('')}</tr>
       </table>
     </div>
   `;
